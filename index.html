@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1017" />
+    <meta name="description" content="Shubhendu Jena is a 3D computer vision researcher and engineer working on Gaussian splatting, sparse-view reconstruction, and deployable BEV perception." />
+    <meta name="author" content="Shubhendu Jena" />
+    <title>Shubhendu Jena — 3D Computer Vision</title>
+    <link rel="canonical" href="https://shubhendu-jena.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1017'/%3E%3Ccircle cx='18' cy='20' r='6' fill='%23ff5c35'/%3E%3Ccircle cx='44' cy='17' r='4' fill='%2376e6c2'/%3E%3Ccircle cx='42' cy='43' r='8' fill='%23ff5c35'/%3E%3Cpath d='M18 20 44 17 42 43 18 20Z' fill='none' stroke='%23f4f2ec' stroke-width='3'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#top" aria-label="Shubhendu Jena, home">
+        <span class="wordmark-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>SJ</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#engineering">Engineering</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="Switch to light theme" title="Change theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path></svg>
+        </button>
+        <a class="header-cta" href="mailto:shubhendu.jena@gmail.com">Let’s talk</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation">
+          <span></span><span></span>
+        </button>
+      </div>
+      <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="#research">Research</a>
+        <a href="#engineering">Engineering</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="assets/shubhendu-jena-cv.pdf">Download CV</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> 3D computer vision · research &amp; engineering</p>
+          <h1 id="hero-title">I build 3D perception systems—from <em>sparse images</em> to <em>deployable BEV.</em></h1>
+          <p class="hero-intro">Research Engineer at CEA List and PhD graduate from Inria / Université de Rennes. I work across Gaussian splatting, sparse-view reconstruction, novel-view synthesis, and multi-camera perception for autonomous driving.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#research">Explore selected work</a>
+            <a class="button button-ghost" href="assets/shubhendu-jena-cv.pdf">Download CV <span>PDF</span></a>
+          </div>
+          <div class="profile-links" aria-label="Profile links">
+            <a href="https://scholar.google.com/citations?user=COw5y4EAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/Shubhendu-Jena" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/shubhendu-jena-531800195/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <aside class="hero-proof" aria-label="Career highlights">
+          <div class="proof-kicker">Research in numbers</div>
+          <div class="proof-item">
+            <strong>&lt;3 <small>min</small></strong>
+            <span>Sparse, unposed reconstruction with Sparfels</span>
+          </div>
+          <div class="proof-item">
+            <strong>~100<small>×</small></strong>
+            <span>Faster inference reported for SparSplat</span>
+          </div>
+          <div class="proof-row">
+            <div><strong>6</strong><span>publications</span></div>
+            <div><strong>’25</strong><span>ICCV Highlight</span></div>
+          </div>
+          <div class="point-cloud" aria-hidden="true">
+            <i style="--x: 13%; --y: 35%; --s: 5px"></i><i style="--x: 26%; --y: 18%; --s: 7px"></i><i style="--x: 35%; --y: 47%; --s: 4px"></i><i style="--x: 48%; --y: 25%; --s: 6px"></i><i style="--x: 60%; --y: 48%; --s: 8px"></i><i style="--x: 76%; --y: 22%; --s: 4px"></i><i style="--x: 84%; --y: 54%; --s: 6px"></i><i style="--x: 68%; --y: 75%; --s: 5px"></i><i style="--x: 42%; --y: 78%; --s: 4px"></i><i style="--x: 20%; --y: 72%; --s: 6px"></i>
+          </div>
+        </aside>
+      </section>
+
+      <section class="signal-bar" aria-label="Research focus">
+        <span>Gaussian splatting</span><i></i><span>3D reconstruction</span><i></i><span>Novel-view synthesis</span><i></i><span>BEV perception</span><i></i><span>Geometry-aware learning</span>
+      </section>
+
+      <section class="section research-section" id="research">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-index">01 / Selected research</p>
+            <h2>Fast, accurate 3D from less input.</h2>
+          </div>
+          <p>My research asks how strong geometric priors and explicit representations can make 3D reconstruction practical under sparse, noisy, or uncalibrated observations.</p>
+        </div>
+
+        <article class="project project-featured reveal">
+          <a class="project-visual" href="https://shubhendu-jena.github.io/Sparfels-web/" target="_blank" rel="noreferrer" aria-label="Open the Sparfels project page">
+            <img src="assets/sparfels-teaser.png" alt="Sparfels reconstruction examples showing input photographs alongside reconstructed meshes of a bench, sculpture, and stone guardian" width="2649" height="604" />
+            <span class="visual-label">Input → geometry → appearance</span>
+          </a>
+          <div class="project-body">
+            <div class="project-meta"><span>ICCV 2025 · Highlight</span><span>Lead author · Equal contribution</span></div>
+            <h3>Sparfels</h3>
+            <p class="project-subtitle">Fast Reconstruction from Sparse Unposed Imagery</p>
+            <p>Turns as few as three uncalibrated views into detailed geometry in under three minutes on a consumer GPU. The pipeline combines MASt3R initialization, bundle-adjusting 2D Gaussian Splatting, correspondence-guided camera optimization, and a new ray-wise color-variance objective.</p>
+            <div class="project-tags"><span>2DGS</span><span>MASt3R</span><span>Bundle adjustment</span><span>Unposed imagery</span></div>
+            <div class="project-links">
+              <a href="https://shubhendu-jena.github.io/Sparfels-web/" target="_blank" rel="noreferrer">Project <span>↗</span></a>
+              <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Jena_Sparfels_Fast_Reconstruction_from_Sparse_Unposed_Imagery_ICCV_2025_paper.html" target="_blank" rel="noreferrer">Paper <span>↗</span></a>
+              <a href="https://github.com/Shubhendu-Jena/Sparfels" target="_blank" rel="noreferrer">Code <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project-split reveal">
+          <div class="project-body">
+            <div class="project-meta"><span>CVPR Workshop 2025</span><span>First author</span></div>
+            <h3>SparSplat</h3>
+            <p class="project-subtitle">Generalizable 2D Gaussian Splatting</p>
+            <p>A feed-forward system for sparse-view reconstruction and novel-view synthesis. Multi-view foundation features are warped into the target view, then decoded into perspective-accurate surface elements for real-time rendering and mesh extraction.</p>
+            <div class="project-callout">
+              <strong>State of the art</strong>
+              <span>on sparse DTU reconstruction, with nearly two orders of magnitude faster inference than prior volume-rendering methods.</span>
+            </div>
+            <div class="project-links">
+              <a href="https://shubhendu-jena.github.io/SparSplat/" target="_blank" rel="noreferrer">Project <span>↗</span></a>
+              <a href="https://arxiv.org/abs/2505.02175" target="_blank" rel="noreferrer">Paper <span>↗</span></a>
+            </div>
+          </div>
+          <a class="project-visual pipeline-visual" href="https://shubhendu-jena.github.io/SparSplat/" target="_blank" rel="noreferrer" aria-label="Open the SparSplat project page">
+            <img src="assets/sparsplat-pipeline.png" alt="SparSplat pipeline from multi-view images through deep features and warping to 2D Gaussian splatting and a reconstructed mesh" width="1183" height="215" />
+            <span class="visual-label">Feed-forward reconstruction pipeline</span>
+          </a>
+        </article>
+      </section>
+
+      <section class="section engineering-section" id="engineering">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-index">02 / Systems engineering</p>
+            <h2>Research ideas, carried through to deployment.</h2>
+          </div>
+          <p>At CEA List, I work across the full 3D perception stack: data, geometry, training, evaluation, visualization, and optimized inference.</p>
+        </div>
+
+        <div class="system-map reveal" role="img" aria-label="Engineering workflow from seven surround-view cameras through multi-task BEV learning to TensorRT deployment">
+          <div class="system-node">
+            <span class="node-number">01</span>
+            <strong>7× surround view</strong>
+            <small>Argoverse · nuScenes · ZOD · ONCE</small>
+          </div>
+          <div class="system-connector"><span>data + geometry</span></div>
+          <div class="system-node system-node-accent">
+            <span class="node-number">02</span>
+            <strong>Multi-task GSBEV</strong>
+            <small>3D detection + HD-map segmentation</small>
+          </div>
+          <div class="system-connector"><span>decode + validate</span></div>
+          <div class="system-node">
+            <span class="node-number">03</span>
+            <strong>ONNX / TensorRT</strong>
+            <small>World-frame lanes · production inference</small>
+          </div>
+        </div>
+
+        <div class="capability-grid">
+          <article class="capability reveal">
+            <span class="capability-icon">◌</span>
+            <h3>Geometry you can inspect</h3>
+            <p>BEV and camera visualizers for validating transforms, LiDAR masks, radial evaluation, coordinate decoding, and qualitative failure modes.</p>
+          </article>
+          <article class="capability reveal">
+            <span class="capability-icon">⌁</span>
+            <h3>Training that scales</h3>
+            <p>Hydra-driven experiments, Lance-format datasets, PyTorch Lightning, SLURM workflows, multi-task objectives, and CI-backed regression checks.</p>
+          </article>
+          <article class="capability reveal">
+            <span class="capability-icon">↯</span>
+            <h3>Models that ship</h3>
+            <p>Deployment-aware architecture work for ONNX and TensorRT, including in-model decoding and outputs designed for downstream validation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section publications-section" id="publications">
+        <div class="section-heading compact reveal">
+          <div>
+            <p class="section-index">03 / Publications</p>
+            <h2>Research record.</h2>
+          </div>
+          <a class="text-link" href="https://scholar.google.com/citations?user=COw5y4EAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">View Google Scholar <span>↗</span></a>
+        </div>
+
+        <div class="publication-list">
+          <article class="publication reveal">
+            <span class="pub-year">2025</span>
+            <div><h3>Sparfels: Fast Reconstruction from Sparse Unposed Imagery</h3><p><strong>S. Jena</strong>, A. Ouasfi, M. Younes, A. Boukhayma</p><span>ICCV 2025 · Highlight</span></div>
+            <div class="pub-links"><a href="https://shubhendu-jena.github.io/Sparfels-web/" target="_blank" rel="noreferrer">Project</a><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Jena_Sparfels_Fast_Reconstruction_from_Sparse_Unposed_Imagery_ICCV_2025_paper.html" target="_blank" rel="noreferrer">Paper</a><a href="https://github.com/Shubhendu-Jena/Sparfels" target="_blank" rel="noreferrer">Code</a></div>
+          </article>
+          <article class="publication reveal">
+            <span class="pub-year">2025</span>
+            <div><h3>SparSplat: Fast Multi-View Reconstruction with Generalizable 2D Gaussian Splatting</h3><p><strong>S. Jena</strong>, S. Reddy, A. Boukhayma</p><span>CVPR Workshop 2025</span></div>
+            <div class="pub-links"><a href="https://shubhendu-jena.github.io/SparSplat/" target="_blank" rel="noreferrer">Project</a><a href="https://arxiv.org/abs/2505.02175" target="_blank" rel="noreferrer">Paper</a></div>
+          </article>
+          <article class="publication reveal">
+            <span class="pub-year">2025</span>
+            <div><h3>Toward Robust Neural Reconstruction from Sparse Point Sets</h3><p>A. Ouasfi, <strong>S. Jena</strong>, E. Marchand, A. Boukhayma</p><span>CVPR 2025</span></div>
+            <div class="pub-links"><a href="https://arxiv.org/abs/2412.16361" target="_blank" rel="noreferrer">Paper</a></div>
+          </article>
+          <article class="publication reveal">
+            <span class="pub-year">2024</span>
+            <div><h3>GeoTransfer: Generalizable Few-Shot Multi-View Reconstruction via Transfer Learning</h3><p><strong>S. Jena</strong>, F. Multon, A. Boukhayma</p><span>ECCV Workshop 2024</span></div>
+            <div class="pub-links"><a href="https://arxiv.org/abs/2408.14724" target="_blank" rel="noreferrer">Paper</a><a href="https://github.com/Shubhendu-Jena/Geo-Transfer" target="_blank" rel="noreferrer">Code</a></div>
+          </article>
+          <article class="publication reveal">
+            <span class="pub-year">2022</span>
+            <div><h3>Neural Mesh-Based Graphics</h3><p><strong>S. Jena</strong>, F. Multon, A. Boukhayma</p><span>ECCV Workshop 2022</span></div>
+            <div class="pub-links"><a href="https://arxiv.org/abs/2208.05785" target="_blank" rel="noreferrer">Paper</a><a href="https://github.com/Shubhendu-Jena/Neural-Mesh-Based-Graphics" target="_blank" rel="noreferrer">Code</a></div>
+          </article>
+          <article class="publication reveal">
+            <span class="pub-year">2021</span>
+            <div><h3>Monocular Human Shape and Pose with Dense Mesh-Borne Local Image Features</h3><p><strong>S. Jena</strong>, F. Multon, A. Boukhayma</p><span>FG 2021</span></div>
+            <div class="pub-links"><a href="https://arxiv.org/abs/2111.05319" target="_blank" rel="noreferrer">Paper</a><a href="https://github.com/Shubhendu-Jena/Monocular-Human-Shape-and-Pose-with-Dense-Mesh-borne-Local-Image-Features" target="_blank" rel="noreferrer">Code</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-index">04 / Experience</p>
+            <h2>Geometry, learning, and systems.</h2>
+          </div>
+          <p>My path has moved from multimodal scene flow and monocular human reconstruction to sparse-view scene reconstruction and production-scale autonomous perception.</p>
+        </div>
+
+        <div class="experience-layout">
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-date">2025—now</div>
+              <div><h3>Research Engineer</h3><p>CEA List · Saclay, France</p><span>Multi-camera 3D detection, HD-map segmentation, data pipelines, evaluation, and optimized inference for SSDM.</span></div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-date">2022—25</div>
+              <div><h3>PhD in Computer Science</h3><p>Inria / Université de Rennes</p><span>Implicit and explicit representations for 3D shape and appearance; Gaussian splatting, point-based rendering, and sparse reconstruction.</span></div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-date">2020—22</div>
+              <div><h3>Research Engineer</h3><p>Inria · Rennes, France</p><span>Graph convolution and pixel-aligned features for monocular human shape and pose estimation.</span></div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-date">2019—20</div>
+              <div><h3>Research Assistant</h3><p>DFKI · Kaiserslautern, Germany</p><span>End-to-end 3D scene flow from LiDAR and RGB, plus modernization of TensorFlow research code.</span></div>
+            </article>
+          </div>
+
+          <aside class="skills-panel reveal">
+            <p class="skills-label">Working set</p>
+            <div class="skill-group"><span>Core</span><p>Python · C++ · PyTorch · CUDA · OpenCV</p></div>
+            <div class="skill-group"><span>3D vision</span><p>2D/3D Gaussian Splatting · MVS · NeRF · SDF · BEV</p></div>
+            <div class="skill-group"><span>Systems</span><p>TensorRT · ONNX · Docker · SLURM · GitLab CI · Lance</p></div>
+            <div class="skill-group"><span>Languages</span><p>English (C1) · French (A2)</p></div>
+            <a class="button button-light" href="assets/shubhendu-jena-cv.pdf">Full CV <span>PDF</span></a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="contact-section reveal" id="contact">
+        <p class="section-index">Let’s build what 3D vision can become.</p>
+        <h2>Research depth.<br />Engineering range.</h2>
+        <p>I’m interested in ambitious research and technical roles across 3D vision, neural rendering, spatial AI, and autonomous perception.</p>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:shubhendu.jena@gmail.com">shubhendu.jena@gmail.com</a>
+          <a class="button button-ghost" href="https://github.com/Shubhendu-Jena" target="_blank" rel="noreferrer">Follow the code <span>↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year></span> Shubhendu Jena</p>
+      <p>3D computer vision · Paris–Saclay</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
