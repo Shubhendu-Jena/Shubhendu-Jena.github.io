@@ -1,6 +1,6 @@
-# Shubhendu Jena — research portfolio
+# Shubhendu Jena 
 
-A dependency-free, responsive portfolio for Shubhendu Jena's 3D computer vision research and engineering work.
+Portfolio for Shubhendu Jena
 
 ## Preview locally
 
