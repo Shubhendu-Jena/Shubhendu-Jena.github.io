@@ -19,4 +19,4 @@ Push the contents of this repository to the `main` branch. GitHub Pages will ser
 - Replace `assets/shubhendu-jena-cv.pdf` when the CV changes.
 - Publication and experience content lives in `index.html`.
 - Theme and responsive layout live in `styles.css`.
-- The mobile menu, theme switch, and scroll reveals live in `script.js`.
+- The site is plain HTML and CSS, with no JavaScript dependencies.
