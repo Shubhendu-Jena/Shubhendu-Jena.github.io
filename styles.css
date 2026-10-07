@@ -48,23 +48,22 @@ h1 { margin: 0; font-size: clamp(2rem, 5vw, 2.7rem); line-height: 1.15; letter-s
 h2 { margin: 0 0 1.5rem; font-size: 1.45rem; letter-spacing: -0.01em; }
 .publication {
   display: grid;
-  grid-template-columns: 210px 1fr;
+  grid-template-columns: 230px 1fr;
   gap: 1.5rem;
+  align-items: center;
   padding: 1.5rem 0;
   border-top: 1px solid var(--line);
 }
 .publication:first-of-type { border-top: 0; padding-top: 0; }
 .thumbnail {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  width: 210px;
-  height: 122px;
-  border: 1px solid var(--line);
-  background: #fff;
+  display: block;
+  width: 230px;
 }
-.thumbnail img { width: 100%; height: 100%; object-fit: contain; }
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+}
 .publication h3 { margin: 0 0 0.35rem; font-size: 1.03rem; line-height: 1.4; }
 .authors, .venue, .paper-links { margin: 0.2rem 0; font-size: 0.92rem; }
 .authors { color: #3f3f3f; }
@@ -85,7 +84,8 @@ footer p { margin: 0; }
   .intro { padding-top: 2.5rem; }
   section { padding: 2.2rem 0; }
   .publication { grid-template-columns: 1fr; gap: 0.9rem; }
-  .thumbnail { width: 100%; height: auto; aspect-ratio: 16 / 8.5; }
+  .publication { align-items: start; }
+  .thumbnail { width: 100%; }
   .experience-row { grid-template-columns: 1fr; gap: 0.1rem; }
 }
 
