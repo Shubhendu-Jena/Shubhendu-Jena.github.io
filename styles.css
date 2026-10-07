@@ -38,10 +38,22 @@ main, footer {
 }
 
 section { padding: 2.75rem 0; border-bottom: 1px solid var(--line); }
-.intro { padding-top: 3.5rem; }
+.intro {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  padding-top: 3.5rem;
+}
+.profile-photo { margin: 0; }
+.profile-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
 h1 { margin: 0; font-size: clamp(2rem, 5vw, 2.7rem); line-height: 1.15; letter-spacing: -0.025em; }
 .role { margin: 0.25rem 0 1.6rem; color: var(--muted); font-size: 1.05rem; }
-.intro > p:not(.role, .links) { max-width: 760px; }
+.intro-copy > p:not(.role, .links) { max-width: 760px; }
 .links { display: flex; flex-wrap: wrap; gap: 0 1.1rem; margin: 1.5rem 0 0; }
 .links a { font-weight: 550; }
 
@@ -86,7 +98,7 @@ footer p { margin: 0; }
 @media (max-width: 760px) {
   .site-header { align-items: flex-start; }
   .site-header nav { gap: 0.8rem; }
-  .intro { padding-top: 2.5rem; }
+  .intro { grid-template-columns: 120px minmax(0, 1fr); gap: 1.25rem; padding-top: 2.5rem; }
   section { padding: 2.2rem 0; }
   #publications { grid-template-columns: 1fr; gap: 2.2rem; }
   #publications > h2 { grid-column: auto; margin-bottom: -0.4rem; }
@@ -96,4 +108,6 @@ footer p { margin: 0; }
 @media (max-width: 420px) {
   .site-header { display: block; }
   .site-header nav { margin-top: 0.5rem; }
+  .intro { grid-template-columns: 1fr; }
+  .profile-photo { width: 120px; }
 }
