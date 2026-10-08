@@ -4,133 +4,213 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Shubhendu Jena — Research Engineer in 3D Computer Vision." />
-    <title>Shubhendu Jena</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Shubhendu Jena · Research Engineer</title>
     <link rel="canonical" href="https://shubhendu-jena.github.io/" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231f5fa9'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial' font-size='32' font-weight='700' fill='white'%3ESJ%3C/text%3E%3C/svg%3E" />
-    <link rel="stylesheet" href="styles.css?v=5" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23212a30'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial' font-size='28' font-weight='700' fill='white'%3ESJ%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css?v=2" />
   </head>
   <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
     <header class="site-header">
-      <a class="name" href="#top">Shubhendu Jena</a>
-      <nav aria-label="Primary navigation">
-        <a href="#publications">Publications</a>
-        <a href="#experience">Experience</a>
-        <a href="assets/shubhendu-jena-cv.pdf">CV</a>
-      </nav>
+      <div class="header-inner">
+        <a class="site-name" href="#about">Shubhendu Jena</a>
+        <nav aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+          <a href="assets/shubhendu-jena-cv.pdf">CV</a>
+        </nav>
+      </div>
     </header>
 
-    <main id="top">
-      <section class="intro">
-        <figure class="profile-photo">
-          <img src="assets/shubhendu-jena-profile.jpg" alt="Shubhendu Jena" width="700" height="700" />
-        </figure>
+    <main id="content">
+      <section class="intro" id="about" aria-labelledby="name">
         <div class="intro-copy">
-          <h1>Shubhendu Jena</h1>
+          <h1 id="name">Shubhendu Jena</h1>
           <p class="role">Research Engineer in 3D Computer Vision</p>
-
-          <p>
-            I am a Research Engineer at <strong>CEA List</strong>, working on multi-camera 3D perception for autonomous driving. I received my PhD in Computer Science from <strong>Inria / Université de Rennes</strong>, where I worked on implicit and explicit representations for 3D shape and appearance.
-          </p>
-          <p>
-            My research interests include sparse-view 3D reconstruction, Gaussian splatting, neural rendering, novel-view synthesis, and bird’s-eye-view perception.
-          </p>
-
-          <p class="links">
+          <p class="profile-links">
             <a href="https://scholar.google.com/citations?user=COw5y4EAAAAJ&amp;hl=en">Google Scholar</a>
             <a href="https://github.com/Shubhendu-Jena">GitHub</a>
             <a href="https://www.linkedin.com/in/shubhendu-jena-531800195/">LinkedIn</a>
-            <a href="assets/shubhendu-jena-cv.pdf">CV</a>
           </p>
+
+          <div class="bio">
+            <p>
+              I am a Research Engineer at <strong>CEA List</strong> in Saclay, working on multi-camera 3D perception for autonomous driving. My current work focuses on joint 3D object detection and HD map prediction from surround-view cameras.
+            </p>
+            <p>
+              I received my PhD in Computer Science from <strong>Inria / Université de Rennes</strong>. My thesis, <em>Combining Implicit and Explicit Representations for Modeling 3D Shape and Appearance</em>, addressed 3D reconstruction and novel-view synthesis from sparse, unposed, or noisy inputs. I worked with occupancy and signed-distance fields, neural mesh rendering, and gaussian splatting, including feed-forward reconstruction from sparse views and joint optimization of scene geometry and camera poses.
+            </p>
+          </div>
+        </div>
+
+        <figure class="portrait">
+          <img src="assets/shubhendu-jena-profile.jpg" alt="Shubhendu Jena" width="700" height="700" />
+        </figure>
+      </section>
+
+      <section id="research" aria-labelledby="research-title">
+        <h2 id="research-title">Research interests</h2>
+        <div class="research-list">
+          <div>
+            <h3>3D reconstruction from sparse views</h3>
+            <p>Recovering scene geometry from a small number of images, including settings where camera poses are unknown.</p>
+          </div>
+          <div>
+            <h3>Neural rendering</h3>
+            <p>Implicit fields, neural mesh rendering, and gaussian splatting for 3D reconstruction and novel-view synthesis.</p>
+          </div>
+          <div>
+            <h3>Camera-based BEV perception</h3>
+            <p>Joint 3D object detection and HD map prediction from surround-view cameras.</p>
+          </div>
         </div>
       </section>
 
+      <section id="news" aria-labelledby="news-title">
+        <h2 id="news-title">News</h2>
+        <ul class="news-list">
+          <li><time>2025/10</time><span><a href="https://shubhendu-jena.github.io/Sparfels-web/">Sparfels</a>, our method for fast 3D reconstruction from sparse images without known camera poses, was presented at ICCV 2025 and selected as a Highlight paper.</span></li>
+          <li><time>2025/09</time><span>I joined CEA List as a Research Engineer.</span></li>
+          <li><time>2025/06</time><span><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Ouasfi_Toward_Robust_Neural_Reconstruction_from_Sparse_Point_Sets_CVPR_2025_paper.html">Toward Robust Neural Reconstruction from Sparse Point Sets</a>, which learns neural signed distance functions from sparse and noisy point clouds, was published at CVPR 2025.</span></li>
+          <li><time>2025/06</time><span><a href="https://shubhendu-jena.github.io/SparSplat/">SparSplat</a>, our feed-forward gaussian-splatting model for sparse-view reconstruction and novel-view synthesis, was presented at CV4Metaverse 2025, a CVPR 2025 workshop.</span></li>
+        </ul>
+      </section>
+
       <section id="publications" aria-labelledby="publications-title">
-        <h2 id="publications-title">Publications</h2>
+        <div class="section-title-row">
+          <h2 id="publications-title">Publications</h2>
+          <p>* denotes equal contribution.</p>
+        </div>
 
-        <article class="publication">
-          <a class="thumbnail" href="https://shubhendu-jena.github.io/Sparfels-web/">
-            <img src="assets/sparfels-teaser.png" alt="Sparfels reconstruction results" />
-          </a>
-          <div>
-            <h3><a href="https://shubhendu-jena.github.io/Sparfels-web/">Sparfels: Fast Reconstruction from Sparse Unposed Imagery</a></h3>
-            <p class="authors"><strong>Shubhendu Jena*</strong>, Amine Ouasfi*, Mae Younes, Adnane Boukhayma</p>
-            <p class="venue">ICCV 2025 <span class="tag">Highlight</span></p>
-            <p class="paper-links"><a href="https://shubhendu-jena.github.io/Sparfels-web/">Project</a> · <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Jena_Sparfels_Fast_Reconstruction_from_Sparse_Unposed_Imagery_ICCV_2025_paper.html">Paper</a> · <a href="https://github.com/Shubhendu-Jena/Sparfels">Code</a></p>
-          </div>
-        </article>
+        <div class="publication-list">
+          <article class="publication">
+            <a class="publication-image" href="https://shubhendu-jena.github.io/Sparfels-web/">
+              <img src="assets/sparfels-teaser.png" alt="Sparfels reconstruction results" />
+            </a>
+            <div>
+              <h3><a href="https://shubhendu-jena.github.io/Sparfels-web/">Sparfels: Fast Reconstruction from Sparse Unposed Imagery</a></h3>
+              <p class="authors"><strong>Shubhendu Jena*</strong>, Amine Ouasfi*, Mae Younes, Adnane Boukhayma</p>
+              <p class="venue">ICCV 2025 · <strong>Highlight</strong></p>
+              <p class="publication-links"><a href="https://shubhendu-jena.github.io/Sparfels-web/">Project</a><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Jena_Sparfels_Fast_Reconstruction_from_Sparse_Unposed_Imagery_ICCV_2025_paper.html">Paper</a><a href="https://github.com/Shubhendu-Jena/Sparfels">Code</a></p>
+            </div>
+          </article>
 
-        <article class="publication">
-          <a class="thumbnail" href="https://shubhendu-jena.github.io/SparSplat/">
-            <img src="assets/sparsplat-pipeline.png" alt="SparSplat reconstruction pipeline" />
-          </a>
-          <div>
-            <h3><a href="https://shubhendu-jena.github.io/SparSplat/">SparSplat: Fast Multi-View Reconstruction with Generalizable 2D Gaussian Splatting</a></h3>
-            <p class="authors"><strong>Shubhendu Jena</strong>, Shishir Reddy Vutukur, Adnane Boukhayma</p>
-            <p class="venue">CVPR Workshop 2025</p>
-            <p class="paper-links"><a href="https://shubhendu-jena.github.io/SparSplat/">Project</a> · <a href="https://arxiv.org/abs/2505.02175">Paper</a></p>
-          </div>
-        </article>
+          <article class="publication">
+            <a class="publication-image" href="https://shubhendu-jena.github.io/SparSplat/">
+              <img src="assets/sparsplat-pipeline.png" alt="SparSplat reconstruction pipeline" />
+            </a>
+            <div>
+              <h3><a href="https://shubhendu-jena.github.io/SparSplat/">SparSplat: Fast Multi-View Reconstruction with Generalizable 2D Gaussian Splatting</a></h3>
+              <p class="authors"><strong>Shubhendu Jena</strong>, Shishir Reddy Vutukur, Adnane Boukhayma</p>
+              <p class="venue">CV4Metaverse, CVPR Workshop 2025</p>
+              <p class="publication-links"><a href="https://shubhendu-jena.github.io/SparSplat/">Project</a><a href="https://arxiv.org/abs/2505.02175">Paper</a></p>
+            </div>
+          </article>
 
-        <article class="publication">
-          <a class="thumbnail" href="https://arxiv.org/abs/2412.16361">
-            <img src="assets/robust-reconstruction.png" alt="Robust neural reconstruction results" />
-          </a>
-          <div>
-            <h3><a href="https://arxiv.org/abs/2412.16361">Toward Robust Neural Reconstruction from Sparse Point Sets</a></h3>
-            <p class="authors">Amine Ouasfi, <strong>Shubhendu Jena</strong>, Eric Marchand, Adnane Boukhayma</p>
-            <p class="venue">CVPR 2025</p>
-            <p class="paper-links"><a href="https://arxiv.org/abs/2412.16361">Paper</a></p>
-          </div>
-        </article>
+          <article class="publication">
+            <a class="publication-image" href="https://ouasfi.github.io/sdro/">
+              <img src="assets/robust-reconstruction.png" alt="Robust neural reconstruction results" />
+            </a>
+            <div>
+              <h3><a href="https://ouasfi.github.io/sdro/">Toward Robust Neural Reconstruction from Sparse Point Sets</a></h3>
+              <p class="authors">Amine Ouasfi, <strong>Shubhendu Jena</strong>, Eric Marchand, Adnane Boukhayma</p>
+              <p class="venue">CVPR 2025</p>
+              <p class="publication-links"><a href="https://ouasfi.github.io/sdro/">Project page</a><a href="https://arxiv.org/abs/2412.16361">Paper</a></p>
+            </div>
+          </article>
 
-        <article class="publication">
-          <a class="thumbnail" href="https://arxiv.org/abs/2408.14724">
-            <img src="assets/geotransfer.png" alt="GeoTransfer reconstruction results" />
-          </a>
-          <div>
-            <h3><a href="https://arxiv.org/abs/2408.14724">GeoTransfer: Generalizable Few-Shot Multi-View Reconstruction via Transfer Learning</a></h3>
-            <p class="authors"><strong>Shubhendu Jena</strong>, Franck Multon, Adnane Boukhayma</p>
-            <p class="venue">ECCV Workshop 2024</p>
-            <p class="paper-links"><a href="https://arxiv.org/abs/2408.14724">Paper</a></p>
-          </div>
-        </article>
+          <article class="publication">
+            <a class="publication-image" href="https://arxiv.org/abs/2408.14724">
+              <img src="assets/geotransfer.png" alt="GeoTransfer reconstruction results" />
+            </a>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2408.14724">GeoTransfer: Generalizable Few-Shot Multi-View Reconstruction via Transfer Learning</a></h3>
+              <p class="authors"><strong>Shubhendu Jena</strong>, Franck Multon, Adnane Boukhayma</p>
+              <p class="venue">ECCV Workshop 2024</p>
+              <p class="publication-links"><a href="https://arxiv.org/abs/2408.14724">Paper</a></p>
+            </div>
+          </article>
 
-        <article class="publication">
-          <a class="thumbnail" href="https://arxiv.org/abs/2208.05785">
-            <img src="assets/neural-mesh-graphics.png" alt="Neural Mesh-Based Graphics results" />
-          </a>
-          <div>
-            <h3><a href="https://arxiv.org/abs/2208.05785">Neural Mesh-Based Graphics</a></h3>
-            <p class="authors"><strong>Shubhendu Jena</strong>, Franck Multon, Adnane Boukhayma</p>
-            <p class="venue">ECCV Workshop 2022</p>
-            <p class="paper-links"><a href="https://arxiv.org/abs/2208.05785">Paper</a> · <a href="https://github.com/Shubhendu-Jena/Neural-Mesh-Based-Graphics">Code</a></p>
-          </div>
-        </article>
+          <article class="publication">
+            <a class="publication-image" href="https://arxiv.org/abs/2208.05785">
+              <img src="assets/neural-mesh-graphics.png" alt="Neural Mesh-Based Graphics results" />
+            </a>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2208.05785">Neural Mesh-Based Graphics</a></h3>
+              <p class="authors"><strong>Shubhendu Jena</strong>, Franck Multon, Adnane Boukhayma</p>
+              <p class="venue">ECCV Workshop 2022</p>
+              <p class="publication-links"><a href="https://arxiv.org/abs/2208.05785">Paper</a><a href="https://github.com/Shubhendu-Jena/Neural-Mesh-Based-Graphics">Code</a></p>
+            </div>
+          </article>
 
-        <article class="publication">
-          <a class="thumbnail" href="https://arxiv.org/abs/2111.05319">
-            <img src="assets/human-pose.png" alt="Monocular human shape and pose results" />
-          </a>
-          <div>
-            <h3><a href="https://arxiv.org/abs/2111.05319">Monocular Human Shape and Pose with Dense Mesh-Borne Local Image Features</a></h3>
-            <p class="authors"><strong>Shubhendu Jena</strong>, Franck Multon, Adnane Boukhayma</p>
-            <p class="venue">FG 2021</p>
-            <p class="paper-links"><a href="https://arxiv.org/abs/2111.05319">Paper</a></p>
-          </div>
-        </article>
+          <article class="publication">
+            <a class="publication-image" href="https://arxiv.org/abs/2111.05319">
+              <img src="assets/human-pose.png" alt="Monocular human shape and pose results" />
+            </a>
+            <div>
+              <h3><a href="https://arxiv.org/abs/2111.05319">Monocular Human Shape and Pose with Dense Mesh-Borne Local Image Features</a></h3>
+              <p class="authors"><strong>Shubhendu Jena</strong>, Franck Multon, Adnane Boukhayma</p>
+              <p class="venue">FG 2021</p>
+              <p class="publication-links"><a href="https://arxiv.org/abs/2111.05319">Paper</a></p>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section id="experience" aria-labelledby="experience-title">
         <h2 id="experience-title">Experience</h2>
-        <div class="experience-row"><time>2025–present</time><p><strong>Research Engineer</strong><br />CEA List, Saclay</p></div>
-        <div class="experience-row"><time>2022–2025</time><p><strong>PhD in Computer Science</strong><br />Inria / Université de Rennes</p></div>
-        <div class="experience-row"><time>2020–2022</time><p><strong>Research Engineer</strong><br />Inria, Rennes</p></div>
-        <div class="experience-row"><time>2019–2020</time><p><strong>Research Assistant</strong><br />DFKI, Kaiserslautern</p></div>
+        <div class="cv-list">
+          <article>
+            <time>2025–present</time>
+            <div><h3>Research Engineer</h3><p class="institution">CEA List · Saclay, France</p><p>Multi-camera 3D perception, HD map prediction, and deployment for autonomous driving.</p></div>
+          </article>
+          <article>
+            <time>2020–2022</time>
+            <div><h3>Research Engineer</h3><p class="institution">Inria · Rennes, France</p><p>Graph-based human shape and pose estimation using pixel-aligned local image features.</p></div>
+          </article>
+          <article>
+            <time>2019–2020</time>
+            <div><h3>Research Assistant</h3><p class="institution">DFKI · Kaiserslautern, Germany</p><p>3D scene-flow prediction from LiDAR and RGB data.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <div class="cv-list">
+          <article>
+            <time>2022–2025</time>
+            <div><h3>PhD in Computer Science</h3><p class="institution">Inria / Université de Rennes, France</p><p>Combining Implicit and Explicit Representations for Modeling 3D Shape and Appearance.</p></div>
+          </article>
+          <article>
+            <time>2017–2020</time>
+            <div><h3>MSc in Visual Computing</h3><p class="institution">Saarland University, Germany</p><p>End-to-End 3D Scene Flow Prediction from LiDAR Point Clouds and RGB Data.</p></div>
+          </article>
+          <article>
+            <time>2012–2017</time>
+            <div><h3>Dual Degree in Electrical Engineering</h3><p class="institution">NIT Rourkela, India</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Technical skills</h2>
+        <dl class="skills">
+          <div><dt>Programming</dt><dd>Python, C++, Bash, SQL, R</dd></div>
+          <div><dt>Machine learning</dt><dd>PyTorch, TensorFlow, Hugging Face, OpenCV, MMDetection</dd></div>
+          <div><dt>3D vision</dt><dd>Gaussian splatting, BEV perception, LiDAR-camera geometry, 3D reconstruction</dd></div>
+          <div><dt>Systems</dt><dd>CUDA, ONNX, TensorRT, Docker, SLURM, GitLab CI</dd></div>
+        </dl>
       </section>
     </main>
 
     <footer>
-      <p>Shubhendu Jena</p>
+      <p>© 2026 Shubhendu Jena</p>
+      <p>Last updated October 2026</p>
     </footer>
   </body>
 </html>
