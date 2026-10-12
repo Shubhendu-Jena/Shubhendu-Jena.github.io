@@ -225,6 +225,21 @@ h3 { font-weight: 620; }
   font-size: 0.88rem;
   font-variant-numeric: tabular-nums;
 }
+.cv-entry {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: 1rem;
+}
+.institution-logo {
+  display: block;
+  width: 4.5rem;
+  height: 2.85rem;
+  object-fit: contain;
+  object-position: left center;
+}
+.institution-logo--seal {
+  width: 2.85rem;
+}
 .cv-list h3 {
   margin: -0.2rem 0 0;
   font-size: 0.98rem;
@@ -281,6 +296,9 @@ footer p { margin: 0; }
   .section-title-row p { margin-top: -0.8rem; margin-bottom: 1.1rem; }
   .cv-list article,
   .skills div { grid-template-columns: 1fr; gap: 0.25rem; }
+  .cv-entry { grid-template-columns: 3.75rem minmax(0, 1fr); gap: 0.8rem; margin-top: 0.35rem; }
+  .institution-logo { width: 3.75rem; height: 2.55rem; }
+  .institution-logo--seal { width: 2.55rem; }
   .news-list li { grid-template-columns: 5rem minmax(0, 1fr); gap: 0.7rem; }
   footer { flex-direction: column; gap: 0.2rem; }
 }
